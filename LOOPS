@@ -1,0 +1,25 @@
+---FOR LOOPS---
+write a program that asks for a number from the user and prints hello world from the number given by the user.
+#include <stdio.h>
+int main (void){
+  int x;
+  printf("Enter a number:");
+  scanf("%d",&x);
+  
+  for(i = 0;i < x;i++){
+  printf("hello world\n")
+  }
+}
+---ADVANCED FOR LOOP---
+
+#include <stdio.h>
+int main (void){
+  //for i to be accessible you have to declare it outside the for loop(int i;)
+  for(i = 0;i < x;i++){
+  printf("hello\n");
+}//2.because after the scope is closed the declared variables will be deleted or terminated
+  printf("%d\n",i);//1.this will return an error:i undefined
+  }
+  //however its good practice to declare variable in the smallest scope possible 
+---NESTED FOR LOOP---
+**loop in loop literally the first part with a loop inside of a loop**
