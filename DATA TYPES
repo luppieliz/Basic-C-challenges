@@ -1,0 +1,71 @@
+ ---BOOLEAN DATA TYPE---
+internally false is 0 and true is 1 so if 
+printf("%d",false) = 1
+printf("%d",true) = 1 
+
+---examples--- 
+
+#include <stdio.h>
+int main(void){
+int x = 3;
+printf("%d\n",x > 3);
+printf("%d\n",x < 3);
+printf("%d\n",x >= 3);
+printf("%d\n",x <= 3);
+printf("%d\n",x = 3);
+printf("%d\n",x == 3);
+printf("%d\n",x != 3);
+//1 equals = is for assignment,
+//2 equals == is for comparison of equality
+}
+---IF STATEMENTS VER 2 ---
+
+#include <stdio.h>
+#include <stdbool.h>
+int main(void){
+int x;
+printf("Enter number to test for odd or even:");
+scanf("%d",&x);
+    if(x % 2 == 0){
+        printf("This is even\n");
+    }else{
+        printf("This is odd\n");
+    }
+//boolean data types are not actually boolean but 
+//true boolean data types but numerical values(true = 1,false = 0) 
+}
+
+---TENARY OPERATIONS---
+TENARY REPLACES IF-ELSE 
+tenary because it takes in 3 values 
+char status;
+status = <condition> ? <value if true> : <value if false>
+
+#include <stdio.h>
+#include <stdbool.h>
+int main(void){
+    char status;
+    status = score >= 50 ? "P" : "F";//leave spaces for readablility
+    //dont use nested tenary operators for the sake of readability 
+printf("%c",status);
+}
+to shorten entire process replace with printf("%c",score >= 50? "P" : "F");
+
+---SWITCH STATEMENTS---
+
+#include <stdio.h>
+#include <stdbool.h>
+int main(void){
+    char x;
+    printf("Enter code:");
+    scanf("%c",&x);
+
+    switch(<intergal variable){
+        case<value>:
+            (perform action)
+            break;
+        default:
+            (some action)//or catch all//the default code taht runs when the 
+        //intergal cvalues applies to none of the case 
+    }
+}
